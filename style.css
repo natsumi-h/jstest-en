@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,400;1,500;1,700&family=Noto+Sans+JP:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.71428;
+  font-weight: 500;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #1A1A1A;
+}
+
+.wrap {
+  margin: 50px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #111;
+  display: inline-block;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  li {
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+  }
+}
+
+p {
+  width: 175px;
+  padding: 0 30px;
+}
+@media (max-width: 767px) {
+  p {
+    width: auto;
+    padding: 0 15px;
+  }
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+.btn {
+  display: none;
+}
+
+.label,
+#backBtn1,
+#backBtn2,
+#resultBtn,
+#copyBtn {
+  background-color: #fff;
+  border: 2px solid #111;
+  -webkit-box-shadow: 3px 3px #111;
+          box-shadow: 3px 3px #111;
+  margin-left: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#backBtn1,
+#backBtn2,
+#resultBtn,
+#copyBtn {
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+button {
+  font-size: 14px;
+  line-height: 1.71428;
+  font-weight: 500;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #1A1A1A;
+}
+
+.btn:checked + .label {
+  background-color: #f8ee62;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#backBtn1:active,
+#backBtn2:active,
+#copyBtn:active,
+#resultBtn:active {
+  background-color: #f8ee62;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#error {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #bf3030;
+}
+
+#result {
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#a1-video,
+#a1-doc,
+#a2-btob,
+#a2-btoc,
+#a2-both,
+#a3-notAround,
+#a3-talked,
+#a3-notAround-a4-second,
+#a1-video-a4-firstOrSecond,
+#a1-doc-a4-firstOrSecond,
+#a1-docOrVideo-a4-third {
+  display: none;
+}
+
+#copyBtn {
+  display: none;
+}
+
+textarea {
+  display: block;
+}
+
+.inner {
+  padding: 50px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .inner {
+    padding: 30px 15px;
+  }
+}
+
+#result {
+  border: solid 1px black;
+  padding: 10px;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Email Template Generator</title>
+    <meta content="概要文を120文字程度" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex" />
+
+  
+    <link rel="stylesheet" href="./CSS/style.css">
+
+ 
+</head>
+
+<body>
+
+
+<main>
+
+  <div class="inner">
+    <ol id="question">
+      <li>
+        <span>Q1</span>
+        <p>Type of Inquiry</p>
+        <input id="q1-doc" class="btn" name="q1" type="radio" value="1"><label class="label" for="q1-doc">Ebook Download</label>
+        <!-- <input id="q1-ebook" class="btn" name="q1" type="radio" value="0"><label class="label" for="q1-ebook">Ebook Download2</label> -->
+        <input id="q1-video" class="btn" name="q1" type="radio" value="0"><label class="label" for="q1-video">Online Seminar</label>
+      </li>
+      <li>
+        <span>Q2</span>
+        <p>Type of Customer's Business</p>
+        <input id="q2-btoc" class="btn" name="q2" type="radio" value="1"><label class="label" for="q2-btoc">BtoC</label>
+        <input id="q2-btob" class="btn" name="q2" type="radio" value="0"><label class="label" for="q2-btob">BtoB</label>
+        <!-- <input id="q2-both" class="btn" name="q2" type="radio" value="0"><label class="label" for="q2-both">Unknown</label> -->
+      </li>
+      <li>
+        <span>Q3</span>
+        <p>Call Result</p>
+        <input id="q3-noPhone" class="btn" name="q3" type="radio" value="1"><label class="label" for="q3-noPhone">Phone No. not registered</label>
+        <input id="q3-notAround" class="btn" name="q3" type="radio" value="0"><label class="label" for="q3-notAround">Not Around</label>
+        <input id="q3-talked" class="btn" name="q3" type="radio" value="0"><label class="label" for="q3-talked">Talked</label>
+        <!-- <input id="q3-ebook" class="btn" name="q3" type="radio" value="0"><label class="label" for="q3-ebook">架電せず（EBOOK）</label> -->
+      </li>
+      <li>
+        <span>Q4</span>
+        <p>Nth of Follow Up</p>
+        <input id="q4-first" class="btn" name="q4" type="radio" value="1"><label class="label" for="q4-first">1st</label>
+        <input id="q4-second" class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-second">2nd</label>
+        <input id="q4-third" class="btn" name="q4" type="radio" value="0"><label class="label" for="q4-third">3rd</label>
+      </li>
+
+    </ol>
+    <!-- <section id="result"> -->
+      <!-- <h2 id="type_title"></h2> -->
+      <!-- <p id="type_desc"></p> -->
+    <!-- </section> -->
+    <button type="button" id="backBtn1" class="hide">Refresh</button>
+
+    <div id="result" >
+      Title:【Global Standard】資料請求ありがとうございました
+      <br>
+      <br>
+      XX株式会社<br>
+      YY様
+      <br>
+      <br>
+      お世話になっております。
+      グローバルスタンダードのセールスサポートチームです。
+      <br>
+
+      <div class="q3">
+        <div id="a3-notAround-a4-second">
+         <!-- 不在 2回目で、かつ不通 -->
+         連日のご連絡となり、失礼いたします。<br>
+         先程お電話を差し上げましたがご不在でしたので、メールにて失礼致します。
+        </div>
+
+        <div id="a3-notAround">
+          先程お電話を差し上げましたがご不在でしたので、メールにて失礼致します。
+        </div>
+
+        <div id="a3-talked">
+          先程はお電話でお話するお時間を頂戴し、ありがとうございました。
+        </div>
+      </div>
+
+      <br>
+
+      <div class="q1">
+        <div id="a1-video">
+          この度は、オンラインセミナーの動画にお申し込み頂き、ありがとうございました。
+        </div>
+        <div id="a1-doc">
+          この度は、弊社サービスの資料請求を頂きありがとうございました。
+        </div>
+      </div>
+
+      <div class="q1-q4">
+      <!-- 動画1回目、OR2回目 -->
+      <div id="a1-video-a4-firstOrSecond">
+        動画URLがお手元に届き、問題なくご視聴頂けましたでしょうか。ご不明点はございませんでしょうか。
+      </div>
+
+      <!-- 資料1回目、OR2回目 -->
+      <div id="a1-doc-a4-firstOrSecond">
+        資料をご覧になって、ご不明点などはございませんでしょうか。
+      </div>
+  
+      <!-- 3回目 and 動画OR資料-->
+      <div id="a1-docOrVideo-a4-third">
+        ダウンロード頂き1ヶ月が経ちましたが、資料をご覧になって、ご不明点などはございませんでしょうか。
+      </div>
+      
+      </div>
+
+      <br>
+
+      <div class="q2">
+        <div id="a2-btob">
+          弊社はBtoB商材の紹介にも力をいれており、それぞれの企業様の魅力に合わせたキャンペーンの設計から運用までをご支援しております。
+          <br>オンラインにて各種ご相談も承っております。
+          <br>
+          <br>
+          【主な相談内容】<br>
+          ・法人様向けサービスでの弊社サービスの活用事例<br>
+          ・サービス利用の費用感・費用対効果について<br>
+          ・プランの設計について<br>
+        </div>
+
+        <div id="a2-btoc">
+          弊社はそれぞれの企業様の魅力に合わせたキャンペーンの設計から運用までをご支援しております。
+          <br>オンラインにて各種ご相談も承っております。
+          <br>
+          <br>
+          【主な相談内容】<br>
+          ・店舗事業での利用・活用事例<br>
+          ・サービス利用の費用感・費用対効果について<br>
+          ・プランの設計について<br>
+        </div>
+
+
+
+        <div id="a2-both">
+          BtoC/BtoB問わず、それぞれの企業様の魅力に合わせたキャンペーンの設計から運用までをご支援しております。
+          <br>
+　　　　　　オンラインにて各種ご相談も承っております。
+          <br>
+          <br>
+          【主な相談内容】<br>
+          ・店舗・ECサービス・法人様向けサービス等での利用・活用事例<br>
+          ・サービス利用の費用感・費用対効果について<br>
+          ・プランの設計について<br>
+
+        </div>
+
+
+
+      </div>
+      <br>
+      オンラインデモをご希望の際には、以下のリンクよりご予約下さいませ。
+      <br>
+      https://zoooooom.com
+      <br>
+      <br>
+
+      ご検討の程、どうぞ宜しくお願い致します。
+      <br>
+      <br>
+
+    </div>
+    <button id="copyBtn" >Copy text to Clipboard</button>
+
+    <button type="button" id="resultBtn">Generate Email Template</button>
+    <button type="button" id="backBtn2" class="hide">Refresh</button>
+    <p id="error"></p>
+
+
+  </div>
+
+
+
+
+
+
+
+
+</main>
+
+    <script src="./JS/script.js"></script>
+
+</body>
+
+</html>
